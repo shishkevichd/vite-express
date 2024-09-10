@@ -4,12 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server/main.js -w src/server",
+    "dev": "node --watch-path=src/server --watch-preserve-output --watch src/server/main.js",
     "start": "NODE_ENV=production node src/server/main.js",
     "build": "vite build"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
     "vite": "^5.0.2"
   },
   "dependencies": {

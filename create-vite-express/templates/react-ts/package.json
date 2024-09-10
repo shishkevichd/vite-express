@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -w src/server -x tsx src/server/main.ts",
+    "dev": "tsx --watch-path=src/server --watch-preserve-output --watch src/server/main.ts",
     "start": "NODE_ENV=production tsx src/server/main.ts",
     "build": "vite build"
   },
@@ -22,7 +22,6 @@
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.2.16",
     "@vitejs/plugin-react": "^4.2.0",
-    "nodemon": "^3.0.1",
     "vite": "^5.0.2"
   }
 }
